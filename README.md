@@ -1,2 +1,2 @@
 # simplecount
-First java project for school
+First java project for school : creating a scientific calculator.
