@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+
+rm -rf com/mysimplecount/*.class
+rm -rf simpleCount.jar
+echo -e '\033[1;34mFichiers .class et .jar supprimés\033[0m'
+javac com/mysimplecount/*.java
+echo -e '\033[1;34mFichiers .java compilés\033[0m'
+jar cvmf META-INF/MANIFEST.MF simpleCount.jar com/mysimplecount/*.class
+echo -e "\033[1;35msimpleCount.jar généré ! Pour le lancer, tapez :\033[0m
+\t\033[1;32mjava -jar simpleCount.jar\033[0m";
+java -jar simpleCount.jar
